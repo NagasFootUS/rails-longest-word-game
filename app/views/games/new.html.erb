@@ -1,0 +1,21 @@
+
+<div class="container">
+  <div class="line">
+    <% @random.each do |letter| %>
+      <div class="grid"><%= letter %></div>
+    <% end %>
+  </div>
+ <div class="search">
+   <form action="/score" method="post">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag :grid, @random %>
+    <input type="text" name="answer">
+    <input type="submit" value="What is the word?">
+  </form>
+ </div>
+
+</div>
+
+
+
+

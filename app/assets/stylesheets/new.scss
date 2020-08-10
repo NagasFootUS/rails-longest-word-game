@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.grid {
+  border: 1px solid yellow;
+  padding: 20px;
+  display: flex;
+  margin: 10px;
+  background-color: pink;
+  color: blue;
+  font-size: 50px;
+}
+.line {
+  display: flex;
+}
+
+.search {
+  margin: 0 auto;
+  width: 100%;
+}
